@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Física</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            width: 200px;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            overflow-y: auto;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            flex: 1;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Física</h1>
+    </header>
+    <nav>
+        <a href="#" onclick="showSection('mecanica')">Mecánica</a>
+        <a href="#" onclick="showSection('termodinamica')">Termodinámica</a>
+        <a href="#" onclick="showSection('electromagnetismo')">Electromagnetismo</a>
+        <a href="#" onclick="showSection('optica')">Óptica</a>
+        <a href="#" onclick="showSection('modernafisica')">Física Moderna</a>
+    </nav>
+    <section id="mecanica">
+        <h2>Mecánica</h2>
+        <p>La mecánica es la rama de la física que describe el movimiento de los objetos, así como las causas de este
+            movimiento. Incluye conceptos como la cinemática, la dinámica y la estática.</p>
+    </section>
+    <section id="termodinamica" class="hidden">
+        <h2>Termodinámica</h2>
+        <p>La termodinámica es la rama de la física que estudia las relaciones entre el calor y otras formas de energía.
+            Incluye conceptos como la temperatura, el calor, la entropía y las leyes de la termodinámica.</p>
+    </section>
+    <section id="electromagnetismo" class="hidden">
+        <h2>Electromagnetismo</h2>
+        <p>El electromagnetismo es la rama de la física que estudia las interacciones entre las cargas eléctricas y los
+            campos eléctricos y magnéticos. Incluye conceptos como la ley de Coulomb, la ley de Ampère y la ley de
+            Faraday.</p>
+    </section>
+    <section id="optica" class="hidden">
+        <h2>Óptica</h2>
+        <p>La óptica es la rama de la física que estudia el comportamiento y las propiedades de la luz. Incluye
+            conceptos como la reflexión, la refracción, la difracción y la formación de imágenes.</p>
+    </section>
+    <section id="modernafisica" class="hidden">
+        <h2>Física Moderna</h2>
+        <p>La física moderna es la rama de la física que estudia fenómenos que no pueden explicarse mediante la física
+            clásica, como la mecánica cuántica y la teoría de la relatividad. Incluye conceptos como los quanta, la
+            dualidad onda-partícula y la relatividad especial y general.</p>
+    </section>
+
+    <script>
+        function showSection(sectionId) {
+            // Ocultar todas las secciones
+            var sections = document.querySelectorAll('section');
+            sections.forEach(function (section) {
+                section.classList.add('hidden');
+            });
+
+            // Mostrar la sección seleccionada
+            var selectedSection = document.getElementById(sectionId);
+            selectedSection.classList.remove('hidden');
+        }
+    </script>
+</body>
+
+</html>

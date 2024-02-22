@@ -1,0 +1,99 @@
+/* formateo del documento  */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* color de fondo */
+body {
+    background-color: #ffffff;
+}
+
+/* Formato del encabezado */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+/* Cursor como puntero al paserlo por la imagen */
+.header .nombre {
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+    /* Color del texto */
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Formato de la imagen, tamaño, tiempo de animación */
+.header .nombre h4 {
+    padding: 0 20px;
+    transition: all 0.5s;
+}
+
+/* Animación del logo */
+.header .nombre h4:hover {
+    transform: scale(1.1);
+}
+
+/* Formateo de .enlaces */
+.header .enlaces {
+    list-style: none;
+}
+
+/* Estilo a la lista li*/
+.header .enlaces li {
+    display: inline-block;
+    padding: 0 1px;
+    transition: all 0.5s;
+
+}
+
+.header .enlaces i {
+    font-size: 20px;
+}
+
+/* Animación de lista */
+
+/* Formato de los enlaces en la lista */
+.header .enlaces a {
+    font-size: 11px;
+    text-decoration: none;
+    color: rgb(25, 25, 25);
+    text-transform: uppercase;
+    padding: 20px;
+    display: block;
+}
+
+/* Animación de los enlaces de la lista */
+.header .enlaces li a:hover {
+    color: #3d20cf;
+}
+
+/* Estilos para el contenido principal de la página */
+.presentacion {
+    max-width: 1100px;
+    height: 50vh;
+    margin: auto;
+    columns: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.presentacion .bienvenida {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}

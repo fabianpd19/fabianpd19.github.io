@@ -1,15 +1,25 @@
+/* Ingreso d fuentes externas */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
 /* formateo del documento  */
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* color de fondo */
 body {
     background-color: #ffffff;
+    font-family: "Poppins", sans-serif;
 }
 
 /* Formato del encabezado */
@@ -74,13 +84,13 @@ body {
 
 /* Animación de los enlaces de la lista */
 .header .enlaces li a:hover {
-    color: #3d20cf;
+    color: #0d47a1;
 }
 
 /* Estilos para el contenido principal de la página */
 .presentacion {
     max-width: 1100px;
-    height: 50vh;
+    height: 70vh;
     margin: auto;
     columns: #fff;
     display: flex;
@@ -90,10 +100,40 @@ body {
 }
 
 .presentacion .bienvenida {
-    font-size: 2.5rem;
-    font-weight: bold;
+    font-size: 1.9rem;
     color: #333;
     text-align: center;
-    margin-bottom: 20px;
     text-transform: uppercase;
 }
+
+.presentacion .bienvenida2{
+    font-size: 80px;
+    color: #0d47a1;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.contenedor {
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.circulo {
+    width: 250px; /* Tamaño del círculo */
+    height: 250px; /* Tamaño del círculo */
+    border-radius: 50%; /* Hace que el div sea un círculo */
+    overflow: hidden; /* Oculta el contenido que se desborda */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Agrega una sombra */
+  }
+  
+  .circulo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen para cubrir todo el círculo */
+  }
+  

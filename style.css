@@ -174,7 +174,7 @@ body {
 }
 
 .tarjeta {
-    width: 300px;
+    width: 400px;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
@@ -208,7 +208,6 @@ body {
     color: #666;
     font-size: 16px;
     line-height: 1.4;
-    margin-bottom: 0;
 }
 
 .proyectos .proyecto_parrafo {
@@ -216,4 +215,43 @@ body {
     padding: 20px;
 }
 
-.proyectos video {}
+.proyectos video {
+    margin-bottom: 30px;
+}
+
+.sobre .informacion {
+    font-size: 20px;
+    font-style: normal;
+    margin-block: 20px;
+    margin-inline: 200px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre audio {
+    margin-top: 20px;
+}
+
+.datos-contacto {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+.datos-contacto h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.datos-contacto ul {
+    list-style: none;
+    padding: 0;
+}
+
+.datos-contacto ul li {
+    margin-bottom: 5px;
+}
+
+.datos-contacto ul li i {
+    margin-right: 5px;
+}
